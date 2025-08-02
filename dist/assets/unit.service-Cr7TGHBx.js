@@ -1,0 +1,1 @@
+import{A as e}from"./api.service-DV_CLxDo.js";const i={getUnit:t=>e.get("unit",{params:t}),createUnit:t=>e.post("unit",t),editUnit:(t,n)=>e.put(`unit/${t}`,n),deleteUnit:t=>e.delete("unit",{data:t}),getUnitDropdown:()=>e.get("unit/dropdown")};export{i as U};
