@@ -1,1 +1,0 @@
-import{A as e}from"./api.service-Dwp43KpG.js";const d={getBrand:r=>e.get("brand",{params:r}),createBrand:r=>e.post("brand",r),updateBrand:(r,n)=>e.put(`brand/${r}`,n),deleteBrand:r=>e.delete("brand",{data:r}),getBrandDropdown:()=>e.get("brand/dropdown")};export{d as B};
