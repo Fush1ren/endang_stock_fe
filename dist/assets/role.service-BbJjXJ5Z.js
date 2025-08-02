@@ -1,0 +1,1 @@
+import{A as r}from"./api.service-CU0LCra-.js";const l={getRole:e=>r.get("role",{params:e}),getRoleById:e=>r.get(`role/${e}`),createRole:e=>r.post("role",e),updateRole:(e,o)=>r.put(`role/${e}`,o),deleteRole:e=>r.delete("role",{data:e}),getRoleDropdown:()=>r.get("role/dropdown")};export{l as R};
