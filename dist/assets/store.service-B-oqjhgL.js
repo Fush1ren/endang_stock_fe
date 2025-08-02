@@ -1,1 +1,0 @@
-import{A as t}from"./api.service-CfIsNQ89.js";const s={getStore:e=>t.get("store",{params:e}),getStoreById:e=>t.get(`store/${e}`),createStore:e=>t.post("store",e),updateStore:(e,r)=>t.put(`store/${e}`,r),deleteStore:e=>t.delete("store",{data:e}),getStoreDropdown:()=>t.get("store/dropdown")};export{s as S};
