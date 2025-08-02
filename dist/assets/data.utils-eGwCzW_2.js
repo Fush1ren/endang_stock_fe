@@ -1,0 +1,1 @@
+const d=e=>e.toLocaleDateString("id-ID",{day:"2-digit",month:"long",year:"numeric"}),i=(e,t,n,a)=>`PRD-${r(e)}-${r(t??0)}-${r(n??0)}-${r(a??0)}`,s=e=>`TRI-${r(e)}`,c=e=>`TRO-${r(e)}`,f=e=>`TRM-${r(e)}`,r=e=>e>999?String(e).padStart(4,"0"):String(e).padStart(3,"0"),u=(e,t)=>e?"Gudang":t?`${t.name}`:"Tidak diketahui";export{u as a,s as b,c,f as d,d as f,i as g};
