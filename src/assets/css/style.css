@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+    --background-image-login: url('/assets/images/login_background.png');
+    --font-poppins: 'Poppins', sans-serif;
+    --color-primary: #0D92F4;
+    --color-secondary: #000000;
+}
+
+body {
+    overflow-y: hidden;
+    background-color:#eeedf2;
+}
+
+#main-view {
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    background-color: #eeedf2;
+    scrollbar-width: thin;
+    scrollbar-color: #bac1c5 transparent;
+}
+
+div[role="dialog"] {
+    background-color: rgb(234, 234, 234);
+    color: black;
+}
+
+div[data-pc-name="pcrowperpagedropdown"] {
+    background-color: transparent !important;
+    font-size: 12px !important;
+    width: 85px;
+    height: 28px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+div[data-pc-name="pcrowperpagedropdown"] [data-pc-section="dropdownicon"] {
+    width: 12px;
+    height: 12px;
+}
+
+.p-paginator-content button {
+    height: 28px !important;
+}
+
+
+.p-select-option {
+    padding: 8px !important;
+}
+
+.p-select-option-label {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+}
+
+#options-menu_list {
+    padding: 8px 12px !important;
+    gap: 6px !important;
+}
+
+#options-menu_list a {
+    min-height: 22px !important;
+}
+
+.p-fileupload .p-button {
+    padding: 4px 8px !important;
+    font-size: 14px !important;
+}
+
+.p-fileupload span {
+    font-size: 14px !important;
+}
+
+.p-toast-message-content svg {
+    padding-top: 4px;
+}
+
+.p-toast-message-content span {
+    font-size: 14px !important;
+}
+
+/* .p-paginator-pages {
+    display: flex !important;
+} */
+
+.p-toast-message-content div {
+     font-size: 12px !important;
+}
+
+.p-autocomplete-option[aria-selected="true"] {
+    background-color: #dee0e0 !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.p-autocomplete input {
+    font-size: 12px !important;
+}
+
+.p-autocomplete input:disabled {
+    font-size: 12px !important;
+}
+
+.p-autocomplete-option {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}

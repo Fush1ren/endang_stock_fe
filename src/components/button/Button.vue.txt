@@ -1,0 +1,61 @@
+<script setup lang="ts">
+import { computed } from 'vue';
+import type { ButtonProps } from './Button.vue.d';
+
+const props = withDefaults(defineProps<ButtonProps>(), {
+  label: 'Click',
+  rounded: false,
+  outlined: false,
+  severity: 'primary',
+});
+
+const severityClass = ((): string => {
+  switch (props.severity) {
+    case 'primary':
+      return 'primary';
+    case 'success':
+      return 'green-500';
+    case 'danger':
+    case 'error':
+      return 'red-500';
+    case 'warning':
+      return 'yellow-500';
+    case 'info':
+      return 'blue-500';
+    default:
+      return 'black';
+  }
+})();
+
+const buttonRounded = ((): string => {
+  if (props.rounded) {
+    return 'rounded-sm';
+  }
+  return '';
+})();
+
+const stylingButton = (() => {
+  if (props.outlined) {
+    return `border-2 border-solid border-${severityClass} text-white `;
+  } else if (props.plain) {
+    return `!bg-transparent text-${props.severity}`;
+  }
+  return `bg-${severityClass} text-white`;
+})();
+
+const buttonClass = computed(() => [
+  'button',
+  'cursor-pointer',
+  'py-1.5 px-2',
+  'shadow-sm',
+  'rounded-sm',
+  'text-sm',
+  buttonRounded,
+  stylingButton,
+]);
+</script>
+<template>
+  <button v-bind="props" :class="[...buttonClass, $props['class']]">
+    {{ label }}
+  </button>
+</template>
