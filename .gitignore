@@ -16,7 +16,7 @@ dist-ssr
 # dist
 public
 .vscode
-package*
+# package*
 schema.prisma
 tsconfig*
 vite.config.ts
