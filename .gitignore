@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # src
-dist
+# dist
 public
 .vscode
 package*

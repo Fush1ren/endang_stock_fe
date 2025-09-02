@@ -1,1 +1,0 @@
-import{A as t}from"./api.service-b5QBwVQS.js";const a={getCategory:e=>t.get("category",{params:e}),createCategory:e=>t.post("category",e),editCategory:(e,r)=>t.put(`category/${e}`,r),deleteCategory:e=>t.delete("category",{data:e}),getCategoryDropdown:()=>t.get("category/dropdown")};export{a as C};
