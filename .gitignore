@@ -18,8 +18,8 @@ public
 .vscode
 # package*
 schema.prisma
-tsconfig*
-vite.config.ts
+# tsconfig*
+# vite.config.ts
 cypress.config.mjs
 cypress
 
