@@ -14,7 +14,7 @@ dist-ssr
 
 # src
 # dist
-public
+# public
 .vscode
 # package*
 schema.prisma
